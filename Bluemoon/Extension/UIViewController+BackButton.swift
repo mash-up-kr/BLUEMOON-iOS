@@ -13,7 +13,7 @@ extension UIViewController {
         let backItem = UIBarButtonItem()
         backItem.title = backTitle
         navigationItem.backBarButtonItem = backItem
-        
+
         navigationController?.navigationBar.backIndicatorImage = image
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = image
         navigationController?.navigationBar.tintColor = tintColor

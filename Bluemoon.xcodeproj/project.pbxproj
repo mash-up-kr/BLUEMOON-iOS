@@ -18,6 +18,7 @@
 		D46FC98C9FE46C1B11B74210 /* Pods_Bluemoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */; };
 		EFCFB50321A9AB70008B82B2 /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50221A9AB70008B82B2 /* customView.swift */; };
 		EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */; };
+		EFCFB50921A9DBB8008B82B2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCFB50821A9DBB8008B82B2 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
 		EFCFB50221A9AB70008B82B2 /* customView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customView.swift; sourceTree = "<group>"; };
 		EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackButton.swift"; sourceTree = "<group>"; };
+		EFCFB50821A9DBB8008B82B2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,15 +73,13 @@
 		03D2AC7021A9718C000A527B /* Bluemoon */ = {
 			isa = PBXGroup;
 			children = (
+				EFCFB50A21A9DBBD008B82B2 /* Login */,
 				B898F9C821A99AA200A84E7F /* Extension */,
+				EFCFB50B21A9DBC9008B82B2 /* Supports */,
 				03D2AC7121A9718C000A527B /* AppDelegate.swift */,
 				03D2AC7321A9718C000A527B /* ViewController.swift */,
 				03D2AC7521A9718C000A527B /* Main.storyboard */,
-				03D2AC7821A9718E000A527B /* Assets.xcassets */,
-				03D2AC7A21A9718E000A527B /* LaunchScreen.storyboard */,
-				03D2AC7D21A9718E000A527B /* Info.plist */,
 				EFCFB50221A9AB70008B82B2 /* customView.swift */,
-				637F079021A9BCB8001E592B /* Color.xcassets */,
 			);
 			path = Bluemoon;
 			sourceTree = "<group>";
@@ -109,6 +109,25 @@
 				FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFCFB50A21A9DBBD008B82B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EFCFB50821A9DBB8008B82B2 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EFCFB50B21A9DBC9008B82B2 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				03D2AC7821A9718E000A527B /* Assets.xcassets */,
+				637F079021A9BCB8001E592B /* Color.xcassets */,
+				03D2AC7A21A9718E000A527B /* LaunchScreen.storyboard */,
+				03D2AC7D21A9718E000A527B /* Info.plist */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +195,7 @@
 				03D2AC7C21A9718E000A527B /* LaunchScreen.storyboard in Resources */,
 				637F079121A9BCB8001E592B /* Color.xcassets in Resources */,
 				03D2AC7921A9718E000A527B /* Assets.xcassets in Resources */,
+				EFCFB50921A9DBB8008B82B2 /* Login.storyboard in Resources */,
 				03D2AC7721A9718C000A527B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -415,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,7 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TA757FA6NR;
-				INFOPLIST_FILE = Bluemoon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bluemoon/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Bluemoon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Bluemoon/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
