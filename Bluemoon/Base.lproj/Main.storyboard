@@ -27,21 +27,53 @@
             </objects>
             <point key="canvasLocation" x="-226" y="967"/>
         </scene>
-        <!--Item 2-->
+        <!--내 구독함-->
         <scene sceneID="GUp-Lz-2Xz">
             <objects>
-                <viewController id="Aes-rf-4Nn" sceneMemberID="viewController">
+                <viewController id="Aes-rf-4Nn" customClass="MySubscriptionViewController" customModule="Bluemoon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6oj-3T-6nA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DuE-Mv-MXO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mySubscriptionCell" rowHeight="93" id="jFJ-yS-wb2">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jFJ-yS-wb2" id="cdK-ar-6G1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Aes-rf-4Nn" id="J5T-TC-MIF"/>
+                                    <outlet property="delegate" destination="Aes-rf-4Nn" id="MKi-f5-VDc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lsv-qV-ngF" firstAttribute="bottom" secondItem="DuE-Mv-MXO" secondAttribute="bottom" id="UpQ-iq-8rK"/>
+                            <constraint firstItem="DuE-Mv-MXO" firstAttribute="top" secondItem="lsv-qV-ngF" secondAttribute="top" id="dcP-7f-C2D"/>
+                            <constraint firstItem="DuE-Mv-MXO" firstAttribute="leading" secondItem="lsv-qV-ngF" secondAttribute="leading" id="iQd-lI-zpY"/>
+                            <constraint firstItem="lsv-qV-ngF" firstAttribute="trailing" secondItem="DuE-Mv-MXO" secondAttribute="trailing" id="jZe-iE-DeJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lsv-qV-ngF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xeT-Nh-Ef9"/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="Iho-Vs-8qE"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="내 구독함" id="EmD-ub-cz5">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9dC-Wf-zM5"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufp-0z-w2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-226" y="303"/>
+            <point key="canvasLocation" x="646" y="303"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="IZ0-N9-CIN">
@@ -100,13 +132,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="2Fl-GG-2Ie" kind="relationship" relationship="viewControllers" id="p0x-yv-yHj"/>
-                        <segue destination="Aes-rf-4Nn" kind="relationship" relationship="viewControllers" id="5SW-5F-c3P"/>
+                        <segue destination="MVW-sW-u3M" kind="relationship" relationship="viewControllers" id="5SW-5F-c3P"/>
                         <segue destination="eRB-Oo-WrU" kind="relationship" relationship="viewControllers" id="EaJ-ht-Fep"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYo-W3-2CB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1178" y="-30"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="qfq-yC-S6g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MVW-sW-u3M" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="xeT-Nh-Ef9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Wt-kA-Vb8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Aes-rf-4Nn" kind="relationship" relationship="rootViewController" id="5yK-ay-sFP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMA-Vk-alN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.40000000000001" y="302.6986506746627"/>
         </scene>
     </scenes>
     <resources>
