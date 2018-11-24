@@ -17,6 +17,7 @@
 		B898F9CE21A9A00600A84E7F /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */; };
 		D46FC98C9FE46C1B11B74210 /* Pods_Bluemoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */; };
 		EFCFB50321A9AB70008B82B2 /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50221A9AB70008B82B2 /* customView.swift */; };
+		EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
 		EFCFB50221A9AB70008B82B2 /* customView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customView.swift; sourceTree = "<group>"; };
+		EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackButton.swift"; sourceTree = "<group>"; };
 		FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			children = (
 				B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */,
 				B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */,
+				EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFCFB50321A9AB70008B82B2 /* customView.swift in Sources */,
+				EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */,
 				B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */,
 				03D2AC7421A9718C000A527B /* ViewController.swift in Sources */,
 				03D2AC7221A9718C000A527B /* AppDelegate.swift in Sources */,
