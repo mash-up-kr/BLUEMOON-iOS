@@ -19,6 +19,7 @@
 		EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */; };
 		EFCFB50921A9DBB8008B82B2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCFB50821A9DBB8008B82B2 /* Login.storyboard */; };
 		EFCFB51221A9F817008B82B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB51121A9F817008B82B2 /* LoginViewController.swift */; };
+		EFCFB51421A9FE3B008B82B2 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB51321A9FE3B008B82B2 /* UIView+Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackButton.swift"; sourceTree = "<group>"; };
 		EFCFB50821A9DBB8008B82B2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EFCFB51121A9F817008B82B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EFCFB51321A9FE3B008B82B2 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */,
 				B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */,
 				EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */,
+				EFCFB51321A9FE3B008B82B2 /* UIView+Border.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				B83EFFC021A9D0420062D290 /* MySubscriptionViewController.swift in Sources */,
 				EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */,
 				B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */,
+				EFCFB51421A9FE3B008B82B2 /* UIView+Border.swift in Sources */,
 				03D2AC7221A9718C000A527B /* AppDelegate.swift in Sources */,
 				B898F9CE21A9A00600A84E7F /* UIView+Radius.swift in Sources */,
 			);
