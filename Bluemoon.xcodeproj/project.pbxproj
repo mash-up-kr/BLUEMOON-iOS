@@ -15,6 +15,7 @@
 		B83EFFC021A9D0420062D290 /* MySubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83EFFBF21A9D0420062D290 /* MySubscriptionViewController.swift */; };
 		B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */; };
 		B898F9CE21A9A00600A84E7F /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */; };
+		B899BEE221AA000E00870C0D /* SubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899BEE121AA000E00870C0D /* SubscriptionTableViewCell.swift */; };
 		D46FC98C9FE46C1B11B74210 /* Pods_Bluemoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */; };
 		EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */; };
 		EFCFB50921A9DBB8008B82B2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCFB50821A9DBB8008B82B2 /* Login.storyboard */; };
@@ -35,6 +36,7 @@
 		B83EFFBF21A9D0420062D290 /* MySubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubscriptionViewController.swift; sourceTree = "<group>"; };
 		B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
+		B899BEE121AA000E00870C0D /* SubscriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTableViewCell.swift; sourceTree = "<group>"; };
 		EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackButton.swift"; sourceTree = "<group>"; };
 		EFCFB50821A9DBB8008B82B2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EFCFB51121A9F817008B82B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				B83EFFBF21A9D0420062D290 /* MySubscriptionViewController.swift */,
+				B899BEE121AA000E00870C0D /* SubscriptionTableViewCell.swift */,
 			);
 			path = SecondTab;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				EFCFB51221A9F817008B82B2 /* LoginViewController.swift in Sources */,
 				B83EFFC021A9D0420062D290 /* MySubscriptionViewController.swift in Sources */,
 				EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */,
+				B899BEE221AA000E00870C0D /* SubscriptionTableViewCell.swift in Sources */,
 				B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */,
 				EFCFB51421A9FE3B008B82B2 /* UIView+Border.swift in Sources */,
 				03D2AC7221A9718C000A527B /* AppDelegate.swift in Sources */,
