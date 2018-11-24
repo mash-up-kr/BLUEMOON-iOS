@@ -37,17 +37,6 @@ extension UIView {
         }
     }
 
-    @IBInspectable var shadowSpread: CGFloat {
-        get {
-            return layer.shadowPath?.boundingBox.maxX ?? 0
-        }
-        set {
-            let dx = -newValue
-            let rect = bounds.insetBy(dx: dx, dy: dx)
-            layer.shadowPath = UIBezierPath(rect: rect).cgPath
-        }
-    }
-
     @IBInspectable var shadowBlur: CGFloat {
         get {
             return layer.shadowRadius * 2
