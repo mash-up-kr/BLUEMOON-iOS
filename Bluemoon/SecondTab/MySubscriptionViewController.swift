@@ -15,6 +15,8 @@ class MySubscriptionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        NetworkProvider().getSchedule()
     }
 
 }

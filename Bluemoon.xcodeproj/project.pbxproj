@@ -20,6 +20,8 @@
 		EFCFB50921A9DBB8008B82B2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCFB50821A9DBB8008B82B2 /* Login.storyboard */; };
 		EFCFB51221A9F817008B82B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB51121A9F817008B82B2 /* LoginViewController.swift */; };
 		EFCFB51421A9FE3B008B82B2 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB51321A9FE3B008B82B2 /* UIView+Border.swift */; };
+		EFCFB51721AA0ABC008B82B2 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB51621AA0ABC008B82B2 /* NetworkLayer.swift */; };
+		EFCFB51921AA0BFC008B82B2 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB51821AA0BFC008B82B2 /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		EFCFB50821A9DBB8008B82B2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EFCFB51121A9F817008B82B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EFCFB51321A9FE3B008B82B2 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		EFCFB51621AA0ABC008B82B2 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		EFCFB51821AA0BFC008B82B2 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 		03D2AC7021A9718C000A527B /* Bluemoon */ = {
 			isa = PBXGroup;
 			children = (
+				EFCFB51521AA0AAA008B82B2 /* Network */,
 				EFCFB50E21A9F661008B82B2 /* FirstTab */,
 				EFCFB50F21A9F668008B82B2 /* SecondTab */,
 				EFCFB51021A9F66F008B82B2 /* ThirdTab */,
@@ -155,6 +160,15 @@
 			children = (
 			);
 			path = ThirdTab;
+			sourceTree = "<group>";
+		};
+		EFCFB51521AA0AAA008B82B2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EFCFB51621AA0ABC008B82B2 /* NetworkLayer.swift */,
+				EFCFB51821AA0BFC008B82B2 /* NetworkProvider.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +341,10 @@
 			files = (
 				EFCFB51221A9F817008B82B2 /* LoginViewController.swift in Sources */,
 				B83EFFC021A9D0420062D290 /* MySubscriptionViewController.swift in Sources */,
+				EFCFB51921AA0BFC008B82B2 /* NetworkProvider.swift in Sources */,
 				EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */,
 				B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */,
+				EFCFB51721AA0ABC008B82B2 /* NetworkLayer.swift in Sources */,
 				EFCFB51421A9FE3B008B82B2 /* UIView+Border.swift in Sources */,
 				03D2AC7221A9718C000A527B /* AppDelegate.swift in Sources */,
 				B898F9CE21A9A00600A84E7F /* UIView+Radius.swift in Sources */,
