@@ -14,6 +14,7 @@
 		03D2AC7C21A9718E000A527B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7A21A9718E000A527B /* LaunchScreen.storyboard */; };
 		B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */; };
 		B898F9CE21A9A00600A84E7F /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */; };
+		637F079121A9BCB8001E592B /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637F079021A9BCB8001E592B /* Color.xcassets */; };
 		D46FC98C9FE46C1B11B74210 /* Pods_Bluemoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */; };
 		EFCFB50321A9AB70008B82B2 /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50221A9AB70008B82B2 /* customView.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +32,7 @@
 		B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
 		EFCFB50221A9AB70008B82B2 /* customView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customView.swift; sourceTree = "<group>"; };
+		637F079021A9BCB8001E592B /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 				03D2AC7A21A9718E000A527B /* LaunchScreen.storyboard */,
 				03D2AC7D21A9718E000A527B /* Info.plist */,
 				EFCFB50221A9AB70008B82B2 /* customView.swift */,
+				637F079021A9BCB8001E592B /* Color.xcassets */,
 			);
 			path = Bluemoon;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D2AC7C21A9718E000A527B /* LaunchScreen.storyboard in Resources */,
+				637F079121A9BCB8001E592B /* Color.xcassets in Resources */,
 				03D2AC7921A9718E000A527B /* Assets.xcassets in Resources */,
 				03D2AC7721A9718C000A527B /* Main.storyboard in Resources */,
 			);
