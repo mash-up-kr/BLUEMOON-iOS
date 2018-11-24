@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		03D2AC7221A9718C000A527B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D2AC7121A9718C000A527B /* AppDelegate.swift */; };
-		03D2AC7421A9718C000A527B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D2AC7321A9718C000A527B /* ViewController.swift */; };
 		03D2AC7721A9718C000A527B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7521A9718C000A527B /* Main.storyboard */; };
 		03D2AC7921A9718E000A527B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7821A9718E000A527B /* Assets.xcassets */; };
 		03D2AC7C21A9718E000A527B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7A21A9718E000A527B /* LaunchScreen.storyboard */; };
@@ -19,13 +18,13 @@
 		D46FC98C9FE46C1B11B74210 /* Pods_Bluemoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */; };
 		EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */; };
 		EFCFB50921A9DBB8008B82B2 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCFB50821A9DBB8008B82B2 /* Login.storyboard */; };
+		EFCFB51221A9F817008B82B2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCFB51121A9F817008B82B2 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01D432655B291C7A891AADD3 /* Pods-Bluemoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.debug.xcconfig"; sourceTree = "<group>"; };
 		03D2AC6E21A9718C000A527B /* Bluemoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluemoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D2AC7121A9718C000A527B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03D2AC7321A9718C000A527B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03D2AC7621A9718C000A527B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03D2AC7821A9718E000A527B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03D2AC7B21A9718E000A527B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		B898F9CD21A9A00600A84E7F /* UIView+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
 		EFCFB50621A9CD6D008B82B2 /* UIViewController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackButton.swift"; sourceTree = "<group>"; };
 		EFCFB50821A9DBB8008B82B2 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EFCFB51121A9F817008B82B2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,6 @@
 				B898F9C821A99AA200A84E7F /* Extension */,
 				EFCFB50B21A9DBC9008B82B2 /* Supports */,
 				03D2AC7121A9718C000A527B /* AppDelegate.swift */,
-				03D2AC7321A9718C000A527B /* ViewController.swift */,
 				03D2AC7521A9718C000A527B /* Main.storyboard */,
 			);
 			path = Bluemoon;
@@ -117,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				EFCFB50821A9DBB8008B82B2 /* Login.storyboard */,
+				EFCFB51121A9F817008B82B2 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -322,10 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCFB51221A9F817008B82B2 /* LoginViewController.swift in Sources */,
 				B83EFFC021A9D0420062D290 /* MySubscriptionViewController.swift in Sources */,
 				EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */,
 				B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */,
-				03D2AC7421A9718C000A527B /* ViewController.swift in Sources */,
 				03D2AC7221A9718C000A527B /* AppDelegate.swift in Sources */,
 				B898F9CE21A9A00600A84E7F /* UIView+Radius.swift in Sources */,
 			);

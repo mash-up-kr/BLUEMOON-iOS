@@ -1,14 +1,15 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  Bluemoon
 //
-//  Created by Suji Kim on 24/11/2018.
+//  Created by 이재성 on 25/11/2018.
 //  Copyright © 2018 mashup6th. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
