@@ -11,10 +11,17 @@ import UIKit
 class MySubscriptionViewController: UIViewController {
 
     let cellIdentifier = "mySubscriptionCell"
-    var testDatas = ["test1", "test2", "test3"]
+    var testDatas = ["test1", "test2", "test3", "test4", "test5"]
+
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        removeEmptyCells()
+    }
+
+    func removeEmptyCells() {
+        tableView.tableFooterView = UITableView()
     }
 
 }
@@ -25,9 +32,13 @@ extension MySubscriptionViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cell: SubscriptionTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SubscriptionTableViewCell
 
-        cell.textLabel?.text = testDatas[indexPath.row]
+        cell.nameLabel.text = testDatas[indexPath.row]
+
+        cell.roundedImageView.image = #imageLiteral(resourceName: "kmk.jpeg")
+        cell.roundedImageView.layer.cornerRadius = cell.roundedImageView.frame.height / 2
+        cell.roundedImageView.layer.masksToBounds = true
 
         return cell
     }
@@ -49,5 +60,9 @@ extension MySubscriptionViewController: UITableViewDelegate {
         config.performsFirstActionWithFullSwipe = false
 
         return config
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
