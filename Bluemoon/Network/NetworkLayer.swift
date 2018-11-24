@@ -29,7 +29,7 @@ extension Service: TargetType {
     }
     var task: Task {
         switch self {
-        case .getSchedule: 
+        case .getSchedule:
             return .requestPlain
         }
     }
