@@ -8,4 +8,5 @@ target 'Bluemoon' do
     pod 'Alamofire', '~> 4.7'
     pod 'Moya', '~> 12.0'
     pod 'Kingfisher', '~> 4.0'
+    pod 'JTAppleCalendar', '~> 7.0'
 end
