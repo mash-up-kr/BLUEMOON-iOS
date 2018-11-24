@@ -12,6 +12,8 @@
 		03D2AC7721A9718C000A527B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7521A9718C000A527B /* Main.storyboard */; };
 		03D2AC7921A9718E000A527B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7821A9718E000A527B /* Assets.xcassets */; };
 		03D2AC7C21A9718E000A527B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7A21A9718E000A527B /* LaunchScreen.storyboard */; };
+		B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */; };
+		B8AD2A3721A9A2EC007874B6 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD2A3621A9A2EC007874B6 /* UIView+Radius.swift */; };
 		D46FC98C9FE46C1B11B74210 /* Pods_Bluemoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		03D2AC7B21A9718E000A527B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D2AC7D21A9718E000A527B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bluemoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		B8AD2A3621A9A2EC007874B6 /* UIView+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
 		FA0CA2CE65135B38A4638EE9 /* Pods-Bluemoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bluemoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bluemoon/Pods-Bluemoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,15 @@
 				18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B898F9C821A99AA200A84E7F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */,
+				B8AD2A3621A9A2EC007874B6 /* UIView+Radius.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D87E454826544B7BD7209E65 /* Pods */ = {
@@ -253,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03D2AC7421A9718C000A527B /* ViewController.swift in Sources */,
+				B8AD2A3721A9A2EC007874B6 /* UIView+Radius.swift in Sources */,
 				03D2AC7221A9718C000A527B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
