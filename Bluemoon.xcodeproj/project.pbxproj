@@ -1,4 +1,4 @@
-// !$*UTF8*$!
+#colorLiteral(red: 0.1803921569, green: 0.6117647059, blue: 1, alpha: 1)// !$*UTF8*$!
 {
 	archiveVersion = 1;
 	classes = {
@@ -11,6 +11,7 @@
 		03D2AC7721A9718C000A527B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7521A9718C000A527B /* Main.storyboard */; };
 		03D2AC7921A9718E000A527B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7821A9718E000A527B /* Assets.xcassets */; };
 		03D2AC7C21A9718E000A527B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D2AC7A21A9718E000A527B /* LaunchScreen.storyboard */; };
+		635B1D6821AA0BB4007235BB /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635B1D6721AA0BB4007235BB /* SignupViewController.swift */; };
 		637F079121A9BCB8001E592B /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637F079021A9BCB8001E592B /* Color.xcassets */; };
 		B83EFFC021A9D0420062D290 /* MySubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83EFFBF21A9D0420062D290 /* MySubscriptionViewController.swift */; };
 		B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */; };
@@ -34,6 +35,7 @@
 		03D2AC7B21A9718E000A527B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D2AC7D21A9718E000A527B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18576497D6C4036293CC6436 /* Pods_Bluemoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bluemoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		635B1D6721AA0BB4007235BB /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		637F079021A9BCB8001E592B /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		B83EFFBF21A9D0420062D290 /* MySubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubscriptionViewController.swift; sourceTree = "<group>"; };
 		B898F9CB21A99E2000A84E7F /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				EFCFB50821A9DBB8008B82B2 /* Login.storyboard */,
 				EFCFB51121A9F817008B82B2 /* LoginViewController.swift */,
+				635B1D6721AA0BB4007235BB /* SignupViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				EFCFB51221A9F817008B82B2 /* LoginViewController.swift in Sources */,
 				B83EFFC021A9D0420062D290 /* MySubscriptionViewController.swift in Sources */,
 				EFCFB51921AA0BFC008B82B2 /* NetworkProvider.swift in Sources */,
+				635B1D6821AA0BB4007235BB /* SignupViewController.swift in Sources */,
 				EFCFB50721A9CD6D008B82B2 /* UIViewController+BackButton.swift in Sources */,
 				B899BEE221AA000E00870C0D /* SubscriptionTableViewCell.swift in Sources */,
 				B898F9CC21A99E2000A84E7F /* UIView+Shadow.swift in Sources */,
@@ -520,7 +524,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TA757FA6NR;
 				INFOPLIST_FILE = "$(SRCROOT)/Bluemoon/Supports/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,7 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.mashup6th.Bluemoon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = bluemoonDev;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
